@@ -115,7 +115,6 @@ function findUser(object) {
 
         if (key == 'appUid') {
             self.userId = value;
-            console.log('id found: ' + value);
         } else if (typeof value === 'object' && value !== null || Array.isArray(value)) {
             findUser(value);
         }
